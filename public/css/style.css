@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';font-size: 22px;
+    background-color: #fcfcfc;
+}
+
+footer {
+    background-color: #038B63;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-list {
+    list-style: none;
+    background: #038B63;
+    box-shadow: 0 0 5px rgb(77, 77, 77);
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh;
+}
+
+/* .nav-item {
+    margin-right: 2rem;
+} */
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.nav-item a:hover {
+    font-weight:900;
+    background-color: rgb(230, 230, 230);
+    color: #038B63;
+    transition: all 150ms ease-in;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.nav-item:first-child a {
+    background-color: unset;
+    padding: unset;
+}
+
+.nav-item:first-child a img {
+    height: 50px;
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: rgb(255, 30, 0);
+    color: white;
+    border: rgb(102, 0, 0) 1px solid;
+}
+
+.notification-content {
+    right: 0;
+    margin-top: 23px;
+    margin-right: 20px;
+    display: none;
+    /* visibility: hidden; */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 450px;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 1;
+    border: 1px #038B63 solid;
+}
+
+.notification-content a {
+    color: black;
+    text-decoration: none;
+    /* display: block; */
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.notification-content a:hover {
+    background-color: #038b62be;
+    box-shadow: 0px 0px 0px 1px rgba(0, 143, 43, 0.75) inset;
+    color: #fff;
+    /* padding-top: unset; */
+    /* padding-bottom: 5px; */
+    transition: unset;
+}
+
+.notif-icon:hover .notification-content {
+  display: block;
+  /* visibility: visible; */
+}
+
+.notif-delete {
+    right: 0;
+}
+
+.notification-item {
+    padding: 10px;  
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.notif-delete {
+    font-size: 20px !important;
+    padding: 5px 10px !important;
+}
+
+.notif-delete:hover {
+    color: #fff !important;
+    background-color: rgba(255, 0, 0, 0.95) !important;
+    box-shadow: 0px 0px 0px 1px rgb(173, 2, 2) inset;
+    padding: 4px 9px;
+}
+
+.notification-item:hover {
+    /* background-color: #dedede; */
+    box-shadow: 0px 0px 0px 3px rgba(0, 143, 43, 0.75) inset;
+}
+
+.seen {
+    background-color: #fff;
+}
+
+.unseen {
+    background-color: #22eeb1;
+}
+
+.steps {
+    list-style: none;
+    padding: 10px;
+}
+
+.steps > li p {
+    color: green;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.ticket-wrapper p {
+    text-indent: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.new-ticket-form {
+    border: 2px solid #bbb;
+    margin: 25px;
+}
+
+.form-links {
+    display: flex;
+    list-style: none;
+    background-color: #038B63;
+    padding: 10px;
+}
+
+.link-items {
+    margin: 0 20px;    
+}
+
+.link-items span {
+    color: #fff;
+}
+
+.link-items * {
+    color: #027a56;
+    font-weight: bold;
+}
+
+.link-items button {
+    padding: 10px 20px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+}
+
+.b {
+    margin-left: auto;
+}
+
+.new-ticket-btn {
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    padding: 5px;
+    border: 3px solid #bbb;
+}
+
+.nav-accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion-body {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.active, .accordion-body:hover {
+    background-color: #ccc; 
+}
+
+.tickets-filtered {
+    height: 95vh;
+    /* overflow-y: scroll; */
+}
+
+.ticket-view {
+    height: 95vh;
+    overflow-y: scroll;
+}
+
+.ticket-view-table {
+    border: 1px solid #bbb;
+    width: 100%;
+}
+
+.ticket-view-table th {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+
+.ticket-view-table td {
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+
+.ticket-info {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.ticket-info a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(0, 2, 150);
+}
+
+.ticket-details {
+    font-size: 18px;
+}
+
+.ticket-id, .ticket-client, .ticket-date {
+    font-size: 18px;
+}
+
+
+
+/* THIS IS FOR THE CLIENT-TICKETS */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.high {
+    /* background-color: #fcaeae; */
+    background-color: #fff;
+    border: 5px solid #921e1e;
+    color: #4d1010;
+}
+
+.normal {
+    /* background-color: #fec481; */
+    background-color: #fff;
+    border: 5px solid #c56e1c;
+    color: #5e350f;
+}
+
+.low {
+    /* background-color: #95df8c; */
+    background-color: #fff;
+    border: 5px solid #186d1f;
+    color: #09270b;
+}
+
+.high-inverted {
+    color: #990000;
+    font-weight: bold
+}
+
+.normal-inverted {
+    color: #ff5e00;
+    font-weight: bold
+}
+
+.low-inverted {
+    color: #008321;
+    font-weight: bold
+}
+
+.ticket-link * {
+    text-decoration: underline !important;
+    color: #0a3f00;
+}
+
+#filtered-tickets-table {
+    font-size: 15px !important;
+    padding-top: 10px;
+}
+
+#filtered-tickets-table tr td {
+    margin-bottom: #fff 2px solid !important;
+}

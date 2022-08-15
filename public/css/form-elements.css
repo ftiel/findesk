@@ -1,0 +1,236 @@
+.btn-primary {
+    padding: 10px;
+    background-color: #038B63;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 5px solid #027a56;
+    font-size: 25px;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    border: 5px solid #038B63;
+    color: #038B63;
+    transition: all 200ms ease-in;
+}
+
+.btn-primary-reversed {
+    padding: 10px;
+    background-color: #fff;
+    width: 300px;
+    text-align: center;
+    color: #038B63;
+    text-decoration: none;
+    font-weight: bold;
+    border: 5px solid #bbb;
+    font-size: 25px;
+}
+
+.form-group input, .form-group select, .bottom textarea, .form-group textarea {
+    border-radius: 5px;
+    border: 2px solid #bbb;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.cursor {
+    cursor:pointer;   
+}
+
+.no-data-found {
+    padding: 50px 150px;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-group select, .input-group input {
+    width: 43% !important;
+    margin: 0 30px 20px 125px !important;
+}
+
+.btn-accept {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.btn-logout {
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    color: #fff;
+    font-size: 22px;
+    padding: 1em;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: rgb(230, 230, 230);
+    color: #038B63;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bold-text:hover, .bold-text:hover i {
+    background-color: #027a56;
+    color: #fff;
+    border-color: #fff;
+}
+
+.bottom button {
+    padding: 10px;
+    margin: 20px 125px;
+    background-color: #038B63;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.bottom button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #038B63;
+    border: 2px solid #038B63;
+}
+
+.bottom button:last-child {
+    float: right;
+}
+
+.reports-container .form-group input, .reports-container .form-group select, .reports-container .btn-accept  {
+    margin: 0px 70px 15px 70px;
+}
+
+.reports-container .left input, 
+.right input, 
+.left select, 
+.right select, 
+.bottom textarea, 
+.left textarea, 
+.right textarea {
+    margin: 0px 125px 0 125px;
+    padding: 5px;
+}
+
+#checkOnBehalfOf, #checkNeedApprover {
+    margin: unset;
+    margin-left: 15px;
+    transform: scale(1.5);
+}
+
+.indent-left {
+    padding-left: 15px;
+}
+
+.title {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.view-ticket-table {
+    border: #027a56 solid 5px;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 1px;
+    vertical-align: bottom;
+    width: 95%;
+}
+
+.view-ticket-table tr td {
+    padding: 5px 10px;
+    margin: 20px !important;
+    font-size: 18px;
+}
+
+.view-ticket-table tr td:first-child {
+    font-weight: bold;
+}
+
+.view-ticket-table tr td:nth-child(2) {
+    padding: 5px 10px;
+    border: unset;
+    font-weight: bold;
+}
+
+.long-text {
+    padding: 15px;
+}
+
+.long-text p {
+    margin-top: 10px;
+}
+
+.attachment img {
+    margin: 0 6%;
+    max-width: 90%;
+}
+
+.notes {
+    border: #027a56 5px solid;
+    border-radius: 15px;
+    margin-right: 15%;
+    padding: 10px;
+    vertical-align: bottom;
+    height: fit-content;
+    width: 90%;
+
+}
+
+.notes textarea {
+    margin-bottom: unset;
+    width: 80%;
+    height: 30px;
+    vertical-align: bottom;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+}
+
+.notes-list {
+    border: grey 1px solid;
+    min-height: 220px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+.btn-comment {
+    height: 30px;
+    vertical-align: bottom;
+    width: 18%;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.note-details {
+    margin-bottom: 10px;
+    color: grey;
+}
+
+.note-details:last-child {
+    margin-bottom: unset;
+    color: #000;
+}
+
+.note-details span {
+    font-size: 18px;
+    text-align: justify;
+}

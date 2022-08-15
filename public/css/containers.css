@@ -1,0 +1,358 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 22fr 3fr;
+    
+}
+
+.wrapper > div {
+    background: #efefef;
+}
+
+.wrapper > div:nth-child(1), .wrapper > div:nth-child(3) {
+    background: #fcfcfc;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.announcement {
+    width: 80%;
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px;
+}
+
+.announcement-info {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 5px;
+}
+
+.announcement-info .image {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+.announcement img {
+    width: 100%;
+    border: #000 1px solid;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.actions * {
+    margin: 10px;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+#ticket-wrapper {
+    transform: translateZ( 0 );
+    transition: transform 0.7s ease-in-out;
+}
+
+.ticket-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 22fr 3fr;
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#admin-view.form-group {
+    margin-left: 6%;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left input:not([type=checkbox]), 
+.right input:not([type=checkbox]), 
+.left select, 
+.right select, 
+.bottom textarea, 
+.left textarea, 
+.right textarea,
+.right img {
+    margin: 0px 125px 0 125px;
+    padding: 5px;
+    width: 60%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.left label, .right label, .bottom label {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.left .input-group {
+    margin-bottom: 7px;
+}
+
+.left .detailed-description {
+    margin-bottom: 5px;
+}
+
+.bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bottom textarea {
+    width: 110vh;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.admin-panel {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    padding: 25px;
+    grid-gap: 25px;
+}
+
+.admin-control {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 25px;
+}
+
+.ticket-loop {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.side-nav {
+    background: #fff;
+    border-radius: 10px;
+    background-color: #00C897;
+    padding: 10px 20px;
+    height: 90vh;
+}
+
+.side-nav ul {
+    list-style: none;
+    border: 1px solid #fff;
+    margin: 20px 0;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.side-nav ul li {
+    margin: 5px 0;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+}
+
+.side-nav ul li a h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.side-nav ul li a h5:hover {
+    font-weight: bold;
+    color: #038B63 !important;
+    background-color: #fff;
+    text-decoration-color: #038B63 !important;
+}
+
+.nav-active h5 {
+    font-weight: bolder !important;
+    text-decoration:underline !important;
+    color: #038B63 !important;
+    text-decoration-color: #038B63 !important;
+    background-color: #fff;
+}
+
+.ticket-watch {
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: #000 solid 5px;
+    border-radius: 15px;
+}
+
+.ticket-watch h2 {
+    padding-bottom: 15px;
+    color: maroon;
+}
+
+.view-ticket-details label {
+    font-size: 18px !important;
+}
+
+.view-ticket-details input, .view-ticket-details textarea {
+    width: 60%;
+    font-size: 16px !important;
+}
+
+.view-ticket-details .bottom textarea {
+    width: 80%;
+    font-size: 16px !important;
+}
+
+.view-ticket-details label {
+    margin-top: 0;
+}
+
+/* .bottom-div {
+    margin-left: 70px;
+} */
+
+.bottom-div {
+    margin-top: 20px;
+    margin-left: 10%;    
+    margin-right: 10%;    
+    
+}
+
+.bottom-notes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    border: #038B63 5px solid;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+
+.admin-notes-create, 
+.admin-notes-list {
+    width: 95%;
+    margin: 2.5%;
+}
+
+.admin-notes-list {
+    border: grey 1px solid;
+    border-radius: 5px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.admin-note {
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: grey;
+    font-size: 18px;
+}
+
+.admin-note:last-child {
+    margin-bottom: 0;
+    color: #000;
+}
+
+.admin-notes-create {
+    margin-top: 0;
+}
+
+.admin-notes-create textarea {
+    width: 80%;
+    font-size: 16px;
+    height: 50px;
+    vertical-align: bottom;
+    padding: 5px;
+    resize: none;
+}
+
+.admin-notes-create button {
+    width: 18%;
+    font-size: 18px;
+    height: 60px;
+    vertical-align: bottom;;
+}
+
+.password-container {
+    padding: 20px;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.password-container form {
+    margin-top: 50px;
+}
+
+.password-container form tr td {
+    padding: 10px 20px;
+}
+
+.password-container input {
+    height: 30px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.password-container button {
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+}
+
+/* MEDIA QUERIES AND SUCH */
+
+@media screen and (max-width: 768px) {
+    #new-ticket-box {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+    .form-links li {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;    
+    }
+
+    .left input, 
+    .right input, 
+    .left select, 
+    .right select, 
+    .bottom textarea, 
+    .left textarea, 
+    .right textarea {
+        align-self: center;
+        width: 80%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+
+    .bottom textarea {
+        margin-left: 10% !important;
+    }
+
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.buttons-wrapper button {
+    height: 50px;
+}

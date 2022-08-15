@@ -1,0 +1,114 @@
+@media screen and (max-width: 414px) {
+    body, * {
+        font-size: 12px !important;   
+    }
+
+    .wrapper {
+        grid-template-columns:  1fr 24fr 1fr;
+    }
+
+    .main-navbar {
+        width: 100%;
+    }
+
+    .nav-toggle {
+        font-size: 50px;
+        right: 10px !important;
+    }
+
+    .btn-logout {
+        padding: 10px !important;    
+    }
+
+    .notif-icon {
+        visibility: hidden;
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .nav-list .nav-item:not(:first-child) {
+        display: none !important;
+    }
+
+    .nav-list li {
+        padding: 10px !important;
+    }
+    
+    .nav-list li:last-child {
+        padding: 0 !important;
+    }
+
+    .nav-item:first-child {
+        margin-left: auto !important;
+    }
+
+    .nav-list li a {
+        padding: 10px !important;
+        width: 100%;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .announcement {
+        height: 300px !important;
+    }
+
+    .ticket-wrapper {
+        grid-template-columns: 1fr 24fr 1fr;
+    }
+
+    .ticket-wrapper * {
+        font-size: 14px !important;
+    }
+
+    #new-ticket-box input:not([type=checkbox]), #new-ticket-box select {
+        margin: auto !important;
+        width: 220px !important;
+    }
+ 
+    #new-ticket-box input[type='checkbox'] {
+        width: 40px;
+        margin-left: 0;
+    }
+
+    .new-ticket-form .bottom textarea {
+        width: 220px !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .form-links li {
+        display: block !important;
+        width: unset !important;
+        margin: 0 auto !important;
+    }
+
+    .form-links li span {
+        margin-left: 10px;
+    }
+
+    .bottom .buttons-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .bottom .buttons-wrapper img {
+        margin-top: 20px;
+        order: 3;
+        flex-grow: 3;
+        align-self: center;
+        justify-content: center;
+        width: 150px !important;
+    }
+}

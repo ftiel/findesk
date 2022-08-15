@@ -1,0 +1,11 @@
+@media screen and (min-width: 500px) {
+
+  #id01 * {
+    font-size: 28px;
+  }
+
+  #id01 {
+    padding-top: 1rem;
+  }
+
+}
